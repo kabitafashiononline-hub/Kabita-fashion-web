@@ -1,0 +1,91 @@
+.welcome-container {
+  padding: 80px 5%;
+  background: white;
+  margin: 40px 5%;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.welcome-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #8a2387;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #8a2387, #e94057);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.welcome-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.welcome-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.welcome-card {
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #fff5f5, #fff);
+  transition: all 0.3s ease;
+  border: 1px solid #ffe6e6;
+}
+
+.welcome-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(138, 35, 135, 0.1);
+}
+
+.welcome-card i {
+  font-size: 3rem;
+  background: linear-gradient(45deg, #8a2387, #e94057);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 20px;
+}
+
+.welcome-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.welcome-card p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .welcome-container {
+    margin: 20px 3%;
+    padding: 40px 20px;
+  }
+  
+  .welcome-title {
+    font-size: 2rem;
+  }
+  
+  .welcome-subtitle {
+    font-size: 1rem;
+  }
+  
+  .welcome-grid {
+    gap: 20px;
+  }
+  
+  .welcome-card {
+    padding: 20px;
+  }
+}

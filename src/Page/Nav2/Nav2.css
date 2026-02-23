@@ -1,0 +1,135 @@
+.nav2-container {
+  background: white;
+  padding: 0 5%;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav2-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.nav2-menu {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav2-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 0;
+  position: relative;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav2-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #8a2387, #e94057);
+  transition: width 0.3s ease;
+}
+
+.nav2-link:hover {
+  color: #8a2387;
+}
+
+.nav2-link:hover::after,
+.nav2-link.active::after {
+  width: 100%;
+}
+
+.nav2-link.active {
+  color: #8a2387;
+  font-weight: 700;
+}
+
+.nav2-offer {
+  background: linear-gradient(90deg, #8a2387, #e94057);
+  padding: 8px 20px;
+  border-radius: 25px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.offer-text {
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .nav2-content {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 0;
+  }
+  
+  .nav2-menu {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav2-menu {
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .nav2-link {
+    font-size: 14px;
+    padding: 5px;
+  }
+  
+  .offer-text {
+    font-size: 12px;
+  }
+  
+  .nav2-offer {
+    padding: 6px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .nav2-menu {
+    gap: 10px;
+  }
+  
+  .nav2-link {
+    font-size: 12px;
+  }
+  
+  .offer-text {
+    font-size: 11px;
+  }
+  
+  .nav2-offer {
+    padding: 5px 12px;
+  }
+  
+  .nav2-container {
+    padding: 0 10px;
+  }
+}

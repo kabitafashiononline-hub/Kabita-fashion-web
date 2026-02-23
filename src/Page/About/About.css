@@ -1,0 +1,24 @@
+.about {
+  padding-top: 80px; /* For navbar */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.about h1 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 2rem 0.5rem;
+  }
+}
