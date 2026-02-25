@@ -11,15 +11,16 @@
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;          /* ← changed to center everything */
   align-items: center;
   padding: 10px 0;
 }
 
 .nav2-menu {
   display: flex;
-  gap: 30px;
+  gap: 40px;                        /* increased gap for better spacing */
   flex-wrap: wrap;
+  justify-content: center;          /* ensures items stay centered when wrapping */
 }
 
 .nav2-link {
@@ -59,74 +60,37 @@
   font-weight: 700;
 }
 
-.nav2-offer {
-  background: linear-gradient(90deg, #8a2387, #e94057);
-  padding: 8px 20px;
-  border-radius: 25px;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-}
-
-.offer-text {
-  color: white;
-  font-weight: 600;
-  font-size: 14px;
-  white-space: nowrap;
-}
-
 /* Responsive Styles */
 @media (max-width: 1200px) {
-  .nav2-content {
-    flex-direction: column;
-    gap: 15px;
-    padding: 15px 0;
-  }
-  
   .nav2-menu {
-    justify-content: center;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav2-menu {
+    gap: 25px;
   }
 }
 
 @media (max-width: 768px) {
   .nav2-menu {
-    gap: 15px;
-    justify-content: center;
+    gap: 20px;
   }
   
   .nav2-link {
     font-size: 14px;
-    padding: 5px;
-  }
-  
-  .offer-text {
-    font-size: 12px;
-  }
-  
-  .nav2-offer {
-    padding: 6px 15px;
+    padding: 8px 0;
   }
 }
 
 @media (max-width: 576px) {
   .nav2-menu {
-    gap: 10px;
+    gap: 15px;
   }
   
   .nav2-link {
-    font-size: 12px;
-  }
-  
-  .offer-text {
-    font-size: 11px;
-  }
-  
-  .nav2-offer {
-    padding: 5px 12px;
+    font-size: 13px;
   }
   
   .nav2-container {

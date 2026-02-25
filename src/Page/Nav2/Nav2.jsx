@@ -5,11 +5,10 @@ import './Nav2.css';
 const Nav2 = () => {
   const navItems = [
     { path: '/', label: 'Home' },
-    { path: '/shop', label: 'Shop' },
-    { path: '/new-arrivals', label: 'New Arrivals' },
     { path: '/collections', label: 'Collections' },
+    { path: '/about-us', label: 'About Us' },
     { path: '/meet-the-team', label: 'Meet The Team' },
-    { path: '/blog', label: 'Blog' }
+    { path: '/contact', label: 'Contact' }
   ];
 
   return (
@@ -27,9 +26,6 @@ const Nav2 = () => {
               {item.label}
             </NavLink>
           ))}
-        </div>
-        <div className="nav2-offer">
-          <span className="offer-text">🎉 Free Shipping on orders above ₹1999</span>
         </div>
       </div>
     </nav>

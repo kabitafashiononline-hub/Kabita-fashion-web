@@ -23,7 +23,7 @@ const Slider = () => {
       id: 3,
       title: "Banarasi Heritage",
       description: "Premium Banarasi silk with intricate designs",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w-1200",
+      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200",
       color: "#f27121"
     }
   ];
@@ -35,14 +35,6 @@ const Slider = () => {
     
     return () => clearInterval(interval);
   }, [slides.length]);
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % slides.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
-  };
 
   return (
     <div className="slider-container">
@@ -67,13 +59,7 @@ const Slider = () => {
         ))}
       </div>
       
-      <button className="slider-btn prev-btn" onClick={prevSlide}>
-        <i className="fas fa-chevron-left"></i>
-      </button>
-      <button className="slider-btn next-btn" onClick={nextSlide}>
-        <i className="fas fa-chevron-right"></i>
-      </button>
-      
+      {/* Dots navigation (kept for manual control) */}
       <div className="slider-dots">
         {slides.map((_, index) => (
           <button
