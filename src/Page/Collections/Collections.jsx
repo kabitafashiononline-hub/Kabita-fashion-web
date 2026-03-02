@@ -10,7 +10,7 @@ export default function Collections() {
       name: 'Pure Silk Sarees',
       description: 'Classic Banarasi, Katan, Tussar pure silk with rich zari work. Premium quality for high-end retail.',
       priceRange: '₹2,500 – ₹12,000',
-      image: 'https://images.unsplash.com/photo-1610030469983-98e9d17f0d0c?auto=format&fit=crop&q=80&w=800', // replace with your real image
+      image: 'https://aham.store/products/printed-design-pure-silk-saree-hs1105?srsltid=AfmBOoodlzSW4mprkAJVe9ptP4ALqqYxGZtXQknMZva3G4W1Y1oi-Vqn', // replace with your real image
     },
     {
       id: 2,
