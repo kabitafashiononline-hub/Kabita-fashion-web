@@ -9,21 +9,21 @@ const Slider = () => {
       id: 1,
       title: "Elegant Silk Sarees",
       description: "Traditional handwoven silk sarees with golden zari work",
-      image: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=1200",
+      image: "/slider/1.webp",
       color: "#8a2387"
     },
     {
       id: 2,
       title: "Modern Georgette Collection",
       description: "Lightweight and comfortable for everyday wear",
-      image: "https://images.unsplash.com/photo-1568121293041-d6fe4dcec8b4?w=1200",
+      image: "/slider/2.jpeg",
       color: "#e94057"
     },
     {
       id: 3,
       title: "Banarasi Heritage",
       description: "Premium Banarasi silk with intricate designs",
-      image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200",
+      image: "/slider/3.webp",
       color: "#f27121"
     }
   ];

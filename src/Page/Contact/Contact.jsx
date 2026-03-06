@@ -44,14 +44,13 @@ export default function Contact() {
 
             <div className="info-block">
               <div className="info-label">Phone / WhatsApp</div>
-              <p className="highlight-phone">+91 84200 05363</p>
-              <p>+91 98300 12345 (alternate)</p>
+              <p className="highlight-phone">+91 8420005363</p>
+              <p>+91 8981223025</p>
             </div>
 
             <div className="info-block">
               <div className="info-label">Email</div>
-              <p>wholesale@kabitafashion.com</p>
-              <p>kabitafashion.os@gmail.com</p>
+              <p>kabitafashion.online@gmail.com</p>
             </div>
 
             <div className="info-block">

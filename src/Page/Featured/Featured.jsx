@@ -10,7 +10,7 @@ export default function FeaturedCollections() {
       name: 'Premium Tussar Silk Sarees',
       desc: 'Natural texture, rich fall, zari work – high demand for premium retail',
       price: '₹2,200 – ₹6,500 / pc',
-      image: 'https://images.unsplash.com/photo-1610030469983-98e9d17f0d0c?auto=format&fit=crop&q=80&w=800',
+      image: '/featured/1.webp',
       moq: 'MOQ 10 pcs',
     },
     {
@@ -18,7 +18,7 @@ export default function FeaturedCollections() {
       name: 'Malai Cotton Light Work',
       desc: 'Soft, breathable, minimal embroidery – summer bestseller',
       price: '₹650 – ₹2,200 / pc',
-      image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800',
+      image: '/featured/malai.jpg',
       moq: 'MOQ 20 pcs',
     },
     {
@@ -26,7 +26,7 @@ export default function FeaturedCollections() {
       name: 'Chanderi Silk-Cotton',
       desc: 'Lightweight, elegant zari motifs – festive & semi-formal favorite',
       price: '₹1,300 – ₹4,800 / pc',
-      image: 'https://images.unsplash.com/photo-1585487000160-6ebcfceb0d26?auto=format&fit=crop&q=80&w=800',
+      image: '/featured/chanderi.avif',
       moq: 'MOQ 8 pcs',
     },
     {
@@ -34,7 +34,7 @@ export default function FeaturedCollections() {
       name: 'Fancy Party Wear Net/Georgette',
       desc: 'Sequence, stones, embroidery – wedding season fast-mover',
       price: '₹900 – ₹4,200 / pc',
-      image: 'https://images.unsplash.com/photo-1610030469668-8a0b0d8e8f8d?auto=format&fit=crop&q=80&w=800',
+      image: '/featured/party.webp',
       moq: 'MOQ 12 pcs',
     },
   ];
