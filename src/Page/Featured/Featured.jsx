@@ -1,9 +1,9 @@
-// src/components/FeaturedCollections.jsx  (or wherever you keep sections)
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import './Featured.css';
 
 export default function FeaturedCollections() {
-  // Only top 4 trending wholesale collections (you can change order/names/prices)
+
   const featured = [
     {
       id: 1,
@@ -41,7 +41,9 @@ export default function FeaturedCollections() {
 
   return (
     <section className="featured-section">
+
       <div className="container">
+
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -55,8 +57,11 @@ export default function FeaturedCollections() {
           Our current best-sellers – ready for bulk orders at competitive prices
         </p>
 
+
         <div className="featured-grid">
+
           {featured.map((item) => (
+
             <motion.div
               key={item.id}
               className="featured-card"
@@ -64,18 +69,25 @@ export default function FeaturedCollections() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              whileHover={{ y: -10, boxShadow: '0 15px 35px rgba(139,0,0,0.1)' }}
+              whileHover={{ y: -10 }}
             >
+
               <div className="card-img">
                 <img src={item.image} alt={item.name} />
               </div>
+
               <div className="card-info">
+
                 <h3>{item.name}</h3>
+
                 <p className="desc">{item.desc}</p>
+
                 <p className="price">
-                  <strong>₹{item.price}</strong>
+                  <strong>{item.price}</strong>
                 </p>
+
                 <p className="moq-note">{item.moq}</p>
+
 
                 <a
                   href={`https://wa.me/918420005363?text=Interested%20in%20${encodeURIComponent(item.name)}%20wholesale`}
@@ -85,17 +97,29 @@ export default function FeaturedCollections() {
                 >
                   Enquiry on WhatsApp
                 </a>
+
               </div>
+
             </motion.div>
+
           ))}
+
         </div>
 
+
         <div className="see-all-wrapper">
-          <a href="/collections" className="see-all-btn">
+
+          <Link
+            to="/collections"
+            className="see-all-btn"
+          >
             View All Collections →
-          </a>
+          </Link>
+
         </div>
+
       </div>
+
     </section>
   );
 }

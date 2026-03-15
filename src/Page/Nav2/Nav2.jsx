@@ -7,7 +7,7 @@ const Nav2 = () => {
     { path: '/', label: 'Home' },
     { path: '/collections', label: 'Collections' },
     { path: '/about-us', label: 'About Us' },
-    { path: '/meet-the-team', label: 'Meet The Team' },
+    // { path: '/meet-the-team', label: 'Meet The Team' },
     { path: '/contact', label: 'Contact' }
   ];
 

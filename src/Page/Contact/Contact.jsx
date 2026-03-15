@@ -1,10 +1,34 @@
-import { motion } from 'framer-motion';
-import './Contact.css';
+import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+import "./Contact.css";
 
 export default function Contact() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "SERVICE_ID",
+        "TEMPLATE_ID",
+        form.current,
+        "PUBLIC_KEY"
+      )
+      .then(
+        () => {
+          alert("Enquiry Sent Successfully!");
+          form.current.reset();
+        },
+        () => {
+          alert("Failed to send enquiry");
+        }
+      );
+  };
+
   return (
     <>
-      {/* Hero Banner */}
       <motion.section
         className="contact-hero"
         initial={{ opacity: 0 }}
@@ -12,6 +36,7 @@ export default function Contact() {
         transition={{ duration: 0.9 }}
       >
         <div className="hero-overlay"></div>
+
         <div className="hero-inner">
           <h1>Get in Touch</h1>
           <p className="hero-subtitle">
@@ -20,10 +45,9 @@ export default function Contact() {
         </div>
       </motion.section>
 
-      {/* Main Content */}
       <section className="contact-main">
         <div className="contact-container">
-          {/* Left - Contact Info */}
+
           <motion.div
             className="contact-info-column"
             initial={{ x: -60, opacity: 0 }}
@@ -36,16 +60,21 @@ export default function Contact() {
             <div className="info-block">
               <div className="info-label">Address</div>
               <p>
-                44A, Kali Krishna Tagore Street,<br />
-                Barabazar, Kolkata - 700007,<br />
+                44A, Kali Krishna Tagore Street <br />
+                Barabazar, Kolkata - 700007 <br />
                 West Bengal, India
               </p>
             </div>
 
             <div className="info-block">
-              <div className="info-label">Phone / WhatsApp</div>
+              <div className="info-label">Retail Customers</div>
               <p className="highlight-phone">+91 8420005363</p>
-              <p>+91 8981223025</p>
+            </div>
+
+            <div className="info-block">
+              <div className="info-label">Wholesale Customers</div>
+              <p className="wholesale-phone">+91 9433843097</p>
+              <p className="wholesale-phone">+91 8981223025</p>
             </div>
 
             <div className="info-block">
@@ -59,19 +88,16 @@ export default function Contact() {
               <p>Sunday: Closed</p>
             </div>
 
-            {/* Big WhatsApp CTA */}
             <a
               href="https://wa.me/918420005363?text=Hello%20Kabita%20Fashion%2C%20I%20am%20interested%20in%20wholesale%20rates%20and%20catalogue"
               target="_blank"
               rel="noopener noreferrer"
               className="whatsapp-cta"
             >
-              <span className="whatsapp-icon">WhatsApp</span>
-              Message Us Now
+              WhatsApp Message
             </a>
           </motion.div>
 
-          {/* Right - Enquiry Form */}
           <motion.div
             className="contact-form-column"
             initial={{ x: 60, opacity: 0 }}
@@ -80,13 +106,36 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <h2 className="column-title">Send Your Enquiry</h2>
-            <form className="enquiry-form">
-              <input type="text" placeholder="Your Name *" required className="form-input" />
-              <input type="tel" placeholder="Phone / WhatsApp Number *" required className="form-input" />
-              <input type="email" placeholder="Email Address" className="form-input" />
+
+            <form ref={form} onSubmit={sendEmail} className="enquiry-form">
+
+              <input
+                type="text"
+                name="user_name"
+                placeholder="Your Name"
+                required
+                className="form-input"
+              />
+
+              <input
+                type="tel"
+                name="user_phone"
+                placeholder="Phone / WhatsApp Number"
+                required
+                className="form-input"
+              />
+
+              <input
+                type="email"
+                name="user_email"
+                placeholder="Email Address"
+                className="form-input"
+              />
+
               <textarea
-                placeholder="Tell us what you're looking for (e.g. tussar, silk, fancy, quantity, budget...)"
+                name="message"
                 rows="5"
+                placeholder="Tell us what you're looking for"
                 required
                 className="form-textarea"
               ></textarea>
@@ -94,12 +143,15 @@ export default function Contact() {
               <button type="submit" className="submit-btn">
                 Submit Enquiry
               </button>
+
             </form>
 
             <p className="form-note">
               We usually reply within a few hours (fastest on WhatsApp)
             </p>
+
           </motion.div>
+
         </div>
       </section>
     </>

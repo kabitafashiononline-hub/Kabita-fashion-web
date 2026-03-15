@@ -2,103 +2,161 @@ import { motion } from "framer-motion";
 import "./About.css";
 
 export default function AboutUs() {
+
+  const stats = [
+    { number: "15+", label: "Years Experience" },
+    { number: "500+", label: "Retail Partners" },
+    { number: "1000+", label: "Saree Designs" },
+    { number: "Pan India", label: "Shipping" }
+  ];
+
   return (
     <>
-      <motion.section
-        className="about-hero"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7 }}
-      >
+
+      <section className="about-hero">
+        <div className="hero-overlay"></div>
+
         <div className="hero-content">
           <h1>Kabita Fashion</h1>
-          <p>Premium Wholesale Sarees from Kolkata</p>
+          <p>Premium Wholesale Sarees From The Heart Of Kolkata</p>
         </div>
-      </motion.section>
+      </section>
 
-      <section className="about-wrapper">
+
+      <section className="about-story">
         <div className="container">
 
           <motion.div
-            className="about-block"
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2>Who We Are</h2>
+
+            <h2>Our Journey</h2>
+
             <p>
-              Kabita Fashion is a trusted wholesale saree supplier located in
-              the heart of Kolkata’s famous Barabazar textile market. With more
-              than 15 years of experience in the saree industry, we supply
-              premium quality sarees to boutiques, retailers, online sellers
-              and exporters across India.
+              Kabita Fashion was founded in the famous textile hub of
+              Barabazar, Kolkata with a vision to connect traditional
+              saree weavers with retailers across India.
             </p>
 
             <p>
-              Our collection includes silk, chanderi, cotton, matka, banarasi,
-              fancy party wear and designer sarees sourced directly from
-              trusted weavers and manufacturers.
+              For more than 15 years we have been supplying premium
+              saree collections to boutiques, retailers and online
+              sellers who trust us for quality and reliable
+              wholesale pricing.
             </p>
-          </motion.div>
-
-          <motion.div
-            className="about-highlight"
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-          >
-            <h3>Why Choose Kabita Fashion</h3>
-
-            <div className="features">
-
-              <div className="feature">
-                Competitive wholesale pricing
-              </div>
-
-              <div className="feature">
-                100+ new designs every week
-              </div>
-
-              <div className="feature">
-                Thousands of sarees ready to dispatch
-              </div>
-
-              <div className="feature">
-                Direct sourcing from weavers
-              </div>
-
-              <div className="feature">
-                Pan-India & international shipping
-              </div>
-
-              <div className="feature">
-                Trusted by 500+ retailers
-              </div>
-
-            </div>
-          </motion.div>
-
-          <motion.div
-            className="promise"
-            initial={{ y: 40, opacity: 0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-          >
-            <h2>Our Promise</h2>
-
-            <p>
-              We believe in quality, consistency and long-term partnerships.
-              Our goal is to provide trending saree collections at the best
-              wholesale prices so that our partners can grow their business
-              confidently.
-            </p>
-
-            {/* <button className="about-btn">
-              Get Latest Catalogue
-            </button> */}
 
           </motion.div>
 
         </div>
       </section>
+
+
+      <section className="about-features">
+        <div className="container">
+
+          <h2>Why Retailers Choose Kabita Fashion</h2>
+
+          <div className="features-grid">
+
+            <div className="feature-card">
+              <h3>Direct From Manufacturers</h3>
+              <p>
+                We source sarees directly from trusted weavers and
+                manufacturers ensuring quality and competitive prices.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Wholesale Pricing</h3>
+              <p>
+                Our collections are specially curated for retailers
+                so they can maintain strong profit margins.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Ready Stock</h3>
+              <p>
+                Thousands of sarees are always available in stock
+                ready for dispatch across India.
+              </p>
+            </div>
+
+            <div className="feature-card">
+              <h3>Trusted By Retailers</h3>
+              <p>
+                Hundreds of retailers rely on Kabita Fashion for
+                consistent quality and trending collections.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <section className="about-stats">
+
+        <div className="container">
+
+          <div className="stats-grid">
+
+            {stats.map((item, index) => (
+              <div key={index} className="stat-box">
+                <h3>{item.number}</h3>
+                <p>{item.label}</p>
+              </div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+      <section className="founder-section">
+
+        <div className="container founder-wrapper">
+
+          <div className="founder-image">
+            <img
+              src="/founder.jpg"
+              alt="Kabita Fashion Founder"
+            />
+          </div>
+
+          <div className="founder-text">
+
+            <h2>Message From The Founder</h2>
+
+            <p>
+              Kabita Fashion was started with a vision to support
+              retailers by providing premium saree collections
+              at genuine wholesale prices.
+            </p>
+
+            <p>
+              From Barabazar in Kolkata we have grown into a trusted
+              supplier for retailers across India.
+            </p>
+
+            <p>
+              We believe strong relationships build strong businesses
+              and we are committed to helping our retail partners grow.
+            </p>
+
+            <h4>— Founder, Kabita Fashion</h4>
+
+          </div>
+
+        </div>
+
+      </section>
+
     </>
   );
 }
