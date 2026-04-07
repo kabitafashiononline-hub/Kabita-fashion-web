@@ -150,6 +150,8 @@ export default function AboutUs() {
             </p>
 
             <h4>— Founder, Kabita Fashion</h4>
+            <h4>— Kishan Kumar Jha</h4>
+
 
           </div>
 
