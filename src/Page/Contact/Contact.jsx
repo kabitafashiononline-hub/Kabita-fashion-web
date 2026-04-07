@@ -60,9 +60,9 @@ export default function Contact() {
             <div className="info-block">
               <div className="info-label">Address</div>
               <p>
-                44A, Kali Krishna Tagore Street <br />
-                Barabazar, Kolkata - 700007 <br />
-                West Bengal, India
+                44A, Kali Krishna Tagore Street,<br />
+                Landmark - Near Malapara More, <br />
+                Kolkata - 700007,West Bengal, India
               </p>
             </div>
 
@@ -73,8 +73,8 @@ export default function Contact() {
 
             <div className="info-block">
               <div className="info-label">Wholesale Customers</div>
-              <p className="wholesale-phone">+91 9433843097</p>
               <p className="wholesale-phone">+91 8981223025</p>
+              <p className="wholesale-phone">+91 9433843097</p>
             </div>
 
             <div className="info-block">

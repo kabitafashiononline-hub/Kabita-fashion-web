@@ -74,14 +74,7 @@
   display: flex;
   gap: 5px;
   color: #ffd700;
-}
-
-.stars i {
-  font-size: 1rem;
-}
-
-.stars i:not(.filled) {
-  color: #ddd;
+  font-size: 1.2rem;
 }
 
 .testimonial-text {
@@ -108,20 +101,20 @@
     padding: 40px 20px;
     margin: 20px 3%;
   }
-  
+
   .rating-title {
     font-size: 2rem;
   }
-  
+
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .testimonial-card {
     padding: 20px;
   }
-  
+
   .customer-image {
     width: 60px;
     height: 60px;

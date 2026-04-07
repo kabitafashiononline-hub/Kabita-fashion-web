@@ -36,7 +36,7 @@ export default function AboutUs() {
 
             <p>
               Kabita Fashion was founded in the famous textile hub of
-              Barabazar, Kolkata with a vision to connect traditional
+              Burrabazar, Kolkata with a vision to connect traditional
               saree weavers with retailers across India.
             </p>
 
@@ -124,7 +124,7 @@ export default function AboutUs() {
 
           <div className="founder-image">
             <img
-              src="/founder.jpg"
+              src="./Kishan.jpeg"
               alt="Kabita Fashion Founder"
             />
           </div>
@@ -140,7 +140,7 @@ export default function AboutUs() {
             </p>
 
             <p>
-              From Barabazar in Kolkata we have grown into a trusted
+              From Burrabazar in Kolkata we have grown into a trusted
               supplier for retailers across India.
             </p>
 

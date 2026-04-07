@@ -25,7 +25,7 @@ const Footer = () => {
           />
 
           <p className="footer-description">
-            Premium wholesale sarees from Barabazar, Kolkata.
+            Premium wholesale sarees from Burrabazar, Kolkata.
             Tradition, quality, and best margins for retailers since 2010.
           </p>
 
@@ -87,7 +87,7 @@ const Footer = () => {
             <li>
               <FaMapMarkerAlt />
               44A, Kali Krishna Tagore Street,
-              Barabazar, Kolkata - 700007,
+              Landmark - Near Malapara More,Kolkata - 700007,
               West Bengal, India
             </li>
 
@@ -102,7 +102,7 @@ const Footer = () => {
                 </span>
 
                 <span>
-                  Wholesale Customers : +91 9433843097 / 8981223025
+                  Wholesale Customers : +91 8981223025/ +91 9433843097 
                 </span>
 
               </div>
