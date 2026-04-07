@@ -22,57 +22,57 @@ export default function Collections() {
       priceRange: '₹2,500 – ₹12,000',
       images: [
         '/collec/silk.webp',
-        '/collec/silk.webp',
-        '/collec/silk.webp',
-        '/collec/silk.webp',
-        '/collec/silk.webp',
-        '/collec/silk.webp',
-        '/collec/silk.webp'
+        '/collec/silk1.jpeg',
+        '/collec/silk2.jpeg',
+        '/collec/silk3.jpeg',
+        '/collec/silk4.jpeg',
+        '/collec/silk5.jpeg',
+        '/collec/silk6.jpeg',
+       
       ]
     },
     {
       id: 2,
-      name: 'Fancy / Designer Sarees',
-      description: 'Party wear, sequence, embroidery, georgette, net with modern designs.',
-      priceRange: '₹800 – ₹4,500',
+      name: 'Kota Digital Print Sarees',
+      description: 'Kota digital print saree featuring vibrant digital prints, soft airy texture, and a graceful elegant drape—designed for all-day comfort, easy styling, and perfect for daily wear, office looks, and casual outings.',
+      priceRange: '₹500 – ₹600',
       images: [
-        '/collec/fancy.avif',
-        '/collec/fancy.avif',
-        '/collec/fancy.avif',
-        '/collec/fancy4.avif',
-        '/collec/fancy5.avif',
-        '/collec/fancy6.avif',
-        '/collec/fancy7.avif'
+        '/collec/kota1.jpeg',
+        '/collec/kota2.jpeg',
+        '/collec/kota3.jpeg',
+        '/collec/kota4.jpeg',
+        '/collec/kota5.jpeg',
+        '/collec/kota6.jpeg',
+        '/collec/kota7.jpeg'
       ]
     },
     {
       id: 3,
-      name: 'Chanderi Sarees',
-      description: 'Lightweight Chanderi silk-cotton blend with zari borders.',
-      priceRange: '₹1,200 – ₹5,000',
+      name: 'Maheshwari Chanderi Hand Sarees',
+      description: 'Lightweight Maheshwari Chanderi saree crafted from a fine silk-cotton blend, featuring elegant zari borders and a soft, breathable texture—perfect for graceful everyday wear and festive occasions.',
+      priceRange: '₹1,200 – ₹1300',
       images: [
-        '/collec/chanderi.jpg',
-        '/collec/chanderi2.jpg',
-        '/collec/chanderi3.jpg',
-        '/collec/chanderi4.jpg',
-        '/collec/chanderi5.jpg',
-        '/collec/chanderi6.jpg',
-        '/collec/chanderi7.jpg'
+        '/collec/chanderi1.jpeg',
+        '/collec/chanderi2.jpeg',
+        '/collec/chanderi3.jpeg',
+        '/collec/chanderi4.jpeg',
+        '/collec/chanderi5.jpeg',
+        '/collec/chanderi6.jpeg',
+        '/collec/chanderi7.jpeg'
       ]
     },
     {
       id: 4,
-      name: 'Tussar / Ghicha Sarees',
-      description: 'Natural texture tussar, ghicha, matka with handwoven appeal.',
+      name: 'Ghicha Silk Pichwai Lotous Sarees',
+      description: 'Rustic elegance in every drape, Natural ghicha silk with a handwoven charm and beautiful Pichwai lotus design—perfect for a classy traditional look.',
       priceRange: '₹1,000 – ₹4,800',
       images: [
-        '/collec/tushar.webp',
-        '/collec/tussar2.webp',
-        '/collec/tussar3.webp',
-        '/collec/tussar4.webp',
-        '/collec/tussar5.webp',
-        '/collec/tussar6.webp',
-        '/collec/tussar7.webp'
+        '/collec/Ghicha1.jpeg',
+        '/collec/Ghicha2.jpeg',
+        '/collec/Ghicha3.jpeg',
+        '/collec/Ghicha4.jpeg',
+        '/collec/Ghicha5.jpeg',
+        '/collec/Ghicha6.jpeg'
       ]
     },
     {
@@ -107,32 +107,39 @@ export default function Collections() {
     },
     {
       id: 7,
-      name: 'Semi-Silk / Art Silk Sarees',
-      description: 'Affordable semi-silk, art silk with fancy borders.',
-      priceRange: '₹500 – ₹3,000',
+      name: 'Matka Tussar Jari Weaving',
+      description: 'Classic matka tussar drape with fine zari detailing, offering rich and elegant vibes',
+      priceRange: '₹2000 – ₹3,000',
       images: [
-        '/collec/silk.webp',
-        '/collec/semisilk2.jpg',
-        '/collec/semisilk3.jpg',
-        '/collec/semisilk4.jpg',
-        '/collec/semisilk5.jpg',
-        '/collec/semisilk6.jpg',
-        '/collec/semisilk7.jpg'
+        '/collec/matka1.jpeg',
+        '/collec/matka2.jpeg',
+        '/collec/matka3.jpeg',
+        '/collec/matka4.jpeg',
+        '/collec/matka5.jpeg',
+        '/collec/matka6.jpeg',
+        '/collec/matka7.jpeg',
+        '/collec/matka8.jpeg',
+        '/collec/matka9.jpeg',
+        '/collec/matka10.jpeg',
+        '/collec/matka11.jpeg',
+        '/collec/matka12.jpeg',
+        '/collec/matka13.jpeg',
+        '/collec/matka14.jpeg'
       ]
     },
     {
       id: 8,
-      name: 'Linen & Blended Sarees',
-      description: 'Linen, cotton-linen blends with modern minimal designs.',
-      priceRange: '₹900 – ₹4,000',
+      name: 'Gicha Gujarati Work Saree',
+      description: 'Elegant ghicha silk saree adorned with intricate Gujarati work, featuring rich texture and traditional craftsmanship—perfect for festive occasions and a classy ethnic look.',
+      priceRange: '₹2000 – 2600',
       images: [
-        '/collec/linen.jpg',
-        '/collec/linen2.jpg',
-        '/collec/linen3.jpg',
-        '/collec/linen4.jpg',
-        '/collec/linen5.jpg',
-        '/collec/linen6.jpg',
-        '/collec/linen7.jpg'
+        '/collec/gichagujrati1.jpeg',
+        '/collec/gichagujrati2.jpeg',
+        '/collec/gichagujrati3.jpeg',
+        '/collec/gichagujrati4.jpeg',
+        '/collec/gichagujrati5.jpeg',
+        '/collec/gichagujrati6.jpeg',
+        '/collec/gichagujrati7.jpeg'
       ]
     },
   ];
