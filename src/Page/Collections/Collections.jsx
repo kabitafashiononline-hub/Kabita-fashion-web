@@ -28,7 +28,6 @@ export default function Collections() {
         '/collec/silk4.jpeg',
         '/collec/silk5.jpeg',
         '/collec/silk6.jpeg',
-       
       ]
     },
     {
@@ -117,14 +116,7 @@ export default function Collections() {
         '/collec/matka4.jpeg',
         '/collec/matka5.jpeg',
         '/collec/matka6.jpeg',
-        '/collec/matka7.jpeg',
-        '/collec/matka8.jpeg',
-        '/collec/matka9.jpeg',
-        '/collec/matka10.jpeg',
-        '/collec/matka11.jpeg',
-        '/collec/matka12.jpeg',
-        '/collec/matka13.jpeg',
-        '/collec/matka14.jpeg'
+        '/collec/matka7.jpeg'
       ]
     },
     {
@@ -206,7 +198,7 @@ export default function Collections() {
         </div>
       </section>
 
-      {/* Zoom + Crop Modal */}
+      {/* Zoom + Crop Modal - Buttons Removed */}
       {selectedImage && (
         <div className="image-modal" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
@@ -221,12 +213,6 @@ export default function Collections() {
                 onCropChange={setCrop}
                 onZoomChange={setZoom}
               />
-            </div>
-
-            <div className="modal-controls">
-              <button onClick={() => setZoom(z => z + 0.1)}>Zoom In</button>
-              <button onClick={() => setZoom(z => Math.max(1, z - 0.1))}>Zoom Out</button>
-              <button onClick={() => alert('Download feature baad mein add kar denge')}>Download Cropped</button>
             </div>
           </div>
         </div>
