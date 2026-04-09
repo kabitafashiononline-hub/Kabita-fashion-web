@@ -86,9 +86,8 @@ const Footer = () => {
 
             <li>
               <FaMapMarkerAlt />
-              44A, Kali Krishna Tagore Street,
-              Landmark - Near Malapara More,Kolkata - 700007,
-              West Bengal, India
+              44A, Kali Krishna Tagore Street,1st Floor,Kolkata - 700007,West Bengal,India.
+              Landmark - Near MalaPara More
             </li>
 
 
@@ -102,7 +101,7 @@ const Footer = () => {
                 </span>
 
                 <span>
-                  Wholesale Customers : +91 8981223025/ +91 9433843097 
+                  Wholesale Customers : +91 8981223025/ +91 9433843097
                 </span>
 
               </div>

@@ -81,12 +81,12 @@ export default function Collections() {
       priceRange: '₹400 – ₹2,200',
       images: [
         '/collec/cotton.webp',
-        '/collec/cotton2.webp',
-        '/collec/cotton3.webp',
-        '/collec/cotton4.webp',
-        '/collec/cotton5.webp',
-        '/collec/cotton6.webp',
-        '/collec/cotton7.webp'
+      //   '/collec/cotton2.webp',
+      //  '/collec/cotton3.webp',
+      //   '/collec/cotton4.webp',
+      //   '/collec/cotton5.webp',
+      //   '/collec/cotton6.webp',
+      //   '/collec/cotton7.webp' 
       ]
     },
     {
@@ -96,12 +96,12 @@ export default function Collections() {
       priceRange: '₹600 – ₹2,800',
       images: [
         '/collec/malai.webp',
-        '/collec/malai2.webp',
-        '/collec/malai3.webp',
-        '/collec/malai4.webp',
-        '/collec/malai5.webp',
-        '/collec/malai6.webp',
-        '/collec/malai7.webp'
+        // '/collec/malai2.webp',
+        // '/collec/malai3.webp',
+        // '/collec/malai4.webp',
+        // '/collec/malai5.webp',
+        // '/collec/malai6.webp',
+        // '/collec/malai7.webp'
       ]
     },
     {

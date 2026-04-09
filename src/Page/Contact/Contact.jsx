@@ -60,9 +60,9 @@ export default function Contact() {
             <div className="info-block">
               <div className="info-label">Address</div>
               <p>
-                44A, Kali Krishna Tagore Street,<br />
-                Landmark - Near Malapara More, <br />
-                Kolkata - 700007,West Bengal, India
+                44A, Kali Krishna Tagore Street,1st Floor,<br/>
+                Kolkata - 700007,West Bengal,India.<br/>
+                Landmark - Near MalaPara More
               </p>
             </div>
 
